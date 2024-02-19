@@ -45,3 +45,26 @@ app.set("views", path.resolve(__dirname, "templates"));
 app.set("view engine", "ejs"); 
 app.use(bodyParser.urlencoded({extended:false}));
 
+app.get("/text", (request,response) => {
+    response.render("text");
+});
+
+app.get("/choices",(request,response) =>{
+    response.render("choices");
+});
+
+app.get("/todo",(request,response) => {
+    response.render("todo");
+});
+
+app.get("/profile",(request,response)=>{
+    response.render("profile");
+});
+
+app.get("/colors",(request,response)=>{
+    response.render("colors");
+});
+
+app.get("/lower_right",(request,response)=>{
+    response.render("lower_right");
+});
