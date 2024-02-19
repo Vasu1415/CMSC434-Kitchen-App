@@ -28,8 +28,16 @@ process.stdin.on("readable", function (){
     }
 });
 
-app.get("/", (request, response) => {  
-	response.render("main_page");  
+app.get("/", (request, response) => { 
+
+	response.render("main_page",{
+        link1: '/text',
+        link2: '/choices',
+        link3: '/todo',
+        link4: '/profile',
+        link5: '/colors',
+        link6: '/lower_right'
+    });  
 });
 
 app.set("views", path.resolve(__dirname, "templates"));  

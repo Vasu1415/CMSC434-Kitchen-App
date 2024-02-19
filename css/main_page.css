@@ -1,0 +1,15 @@
+html {
+    background: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+body {
+    font-family: "Hedvig Letters Serif", serif;
+}
+#heading {
+    text-align: center;
+    font-size: 4rem;
+    border-radius: 10px; /* Rounded corners */
+    color: crimson;
+}
