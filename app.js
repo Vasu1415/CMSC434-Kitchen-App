@@ -36,7 +36,8 @@ app.get("/", (request, response) => {
         link3: '/todo',
         link4: '/profile',
         link5: '/colors',
-        link6: '/lower_right'
+        link6: '/lower_right',
+        link7: "/"
     });  
 });
 
