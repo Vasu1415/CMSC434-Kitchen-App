@@ -68,3 +68,5 @@ app.get("/colors",(request,response)=>{
 app.get("/lower_right",(request,response)=>{
     response.render("lower_right");
 });
+
+app.listen(portNumber);
