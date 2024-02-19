@@ -1,6 +1,19 @@
 <link rel="stylesheet" href="~/css/profile_page.css">
+<script>
+    function displayMessage() {
+        let message = document.getElementById('imageMessage');
+        message.style.display = (message.style.display === 'none') ? 'block' : 'none';
+    }
+    function closeMessage() {
+        let message = document.getElementById('imageMessage');
+        message.style.display = 'none';
+    }
+</script>
 <%- include('layout') %>
 <div class="heading">
     <h1>Profile</h1> 
 </div>
-<img src="~/image.jpg" alt="business hours">
+<img src="~/image.jpg" alt="business hours" onclick="displayMessage()">
+<div id="imageMessage" style="display: none;">
+    <p>Warning! don't click the profile image <button onclick="closeMessage()">X</button></p>
+</div>
