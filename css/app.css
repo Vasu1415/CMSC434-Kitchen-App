@@ -2,6 +2,13 @@
 html{
     background-color: pink;
 }
+
+.tabs{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
 .tablink {
     background-color: white;
     color: black;
@@ -24,7 +31,7 @@ html{
     display: none;
     justify-content: space-evenly;
     text-align: center;
-    
+    padding-top: 50px;
 }
 #Text{
     text-align: left;
@@ -48,7 +55,7 @@ html{
     display: none;
     color: white;
     position: fixed;
-    top: 65%;
+    top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: red;

@@ -9,12 +9,14 @@
     <script src="./scripts/tab.js"></script>
 </head>
 <body>
-    <button class="tablink" onclick="openTab('Text', this, 'gray')" id="defaultOpen">Text</button>
-    <button class="tablink" onclick="openTab('Choices', this, 'gray')">Choices</button>
-    <button class="tablink" onclick="openTab('ToDo', this, 'gray')">ToDo</button>
-    <button class="tablink" onclick="openTab('Profile', this, 'gray')">Profile</button>
-    <button class="tablink" onclick="openTab('Colors', this, 'gray')">Colors</button>
-    <button class="tablink" onclick="openTab('LowerRight', this, 'gray')">Lower Right</button>
+    <div class="tabs">
+        <button class="tablink" onclick="openTab('Text', this, 'gray')" id="defaultOpen">Text</button>
+        <button class="tablink" onclick="openTab('Choices', this, 'gray')">Choices</button>
+        <button class="tablink" onclick="openTab('ToDo', this, 'gray')">ToDo</button>
+        <button class="tablink" onclick="openTab('Profile', this, 'gray')">Profile</button>
+        <button class="tablink" onclick="openTab('Colors', this, 'gray')">Colors</button>
+        <button class="tablink" onclick="openTab('LowerRight', this, 'gray')">Lower Right</button>
+    </div>
 
     <div id="Text" class="tabcontent">
         <h2>Text</h2>
