@@ -121,8 +121,8 @@ html{
 }
 #todoList li.checked {
 	text-decoration: line-through;
-    color: #888; 
-    background-color: #e7e7e7; 
+    color: white; 
+    background-color: grey; 
 }
 #todoList li.checked:before {
     content: '\2714';
@@ -130,7 +130,7 @@ html{
     left: 10px;
     font-size: 20px;
     line-height: 20px;
-    color: green; 
+    color: white; 
 }
 .close {
     position: absolute;
