@@ -1,0 +1,91 @@
+/* Style the tab buttons */
+html{
+    background-color: pink;
+}
+.tablink {
+    background-color: white;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 16.6%;
+    margin: 0;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#Text{
+    text-align: left;
+    color: black;
+}
+#Choices{
+    text-align: left;
+    color: black;   
+}
+#Profile{
+    text-align: left;
+    color: black;
+}
+.inner{
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.dialog-box {
+    display: none;
+    color: white;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.message{
+    display: inline;
+}
+#Colors{
+    text-align: left;
+    color: black;
+    font-size: 2rem;
+}
+.paragraph_1{
+    background-color: black;
+    text-align: center;
+    color: yellow;
+    margin: 0;
+    padding: 0;
+}
+.paragraph_2{
+    background-color: yellow;
+    color: purple;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#LowerRight{
+    text-align: left;
+    color: black;
+}
+.down{
+    font-size: large;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 1rem;
+}

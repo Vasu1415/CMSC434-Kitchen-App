@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Website Phase 1.2</title>
+    <link rel="stylesheet" href="./css/app.css" type="text/css">
+    <script src="./scripts/tab.js"></script>
+</head>
+<body>
+    <button class="tablink" onclick="openTab('Text', this, 'gray')" id="defaultOpen">Text</button>
+    <button class="tablink" onclick="openTab('Choices', this, 'gray')">Choices</button>
+    <button class="tablink" onclick="openTab('ToDo', this, 'gray')">ToDo</button>
+    <button class="tablink" onclick="openTab('Profile', this, 'gray')">Profile</button>
+    <button class="tablink" onclick="openTab('Colors', this, 'gray')">Colors</button>
+    <button class="tablink" onclick="openTab('LowerRight', this, 'gray')">Lower Right</button>
+
+    <div id="Text" class="tabcontent">
+        <h2>Text</h2>
+        <p>This is going to be too much text to show...</p>
+    </div>
+
+    <div id="Choices" class="tabcontent">
+        <h2>Choices</h2>
+        Hat color to place on Player One's head: <br>
+        <input type="radio" class="radio-choice" value="Red" checked>Red<br>
+        <input type="radio" class="radio-choice" value="Blue">Blue<br>
+        <br>
+        Hat color to place on Player Two's head: <br>
+        <select>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+        </select><br>
+        <br>
+        <input type="submit" value="Have Computer Players Make Guesses Exactly One Will Be Correct" onclick="message()">
+    </div>
+
+    <div id="Profile" class="tabcontent">
+        <h1><b>Profile</b></h1> 
+        <div class="inner">
+            <img src="./images/images.jpg" alt="Smiley J. Smile" class="Smiley" height="250" width="300" onclick="displayNoti()"><br>
+            <b>Smiley J.Smile</b>
+        </div>
+        <div id="notification" class="dialog-box">
+            <p class="message"><b>Warning!</b> Do not click on the profile image.</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="close-button" onclick="closeNoti()">X</span>
+        </div>
+    </div>
+
+    <div id="Colors" class="tabcontent">
+        <h2><b>Color</b></h2>
+        <br>
+        <p class="paragraph_1">Hello There</p>
+        <p class="paragraph_2">Hi Again</p>
+    </div>
+
+    <div id="LowerRight" class="tabcontent">
+        <h2><b>Lower Right</b></h2>
+        <p class="down"> Down Here </p>
+    </div>
+</body>
+</html>
