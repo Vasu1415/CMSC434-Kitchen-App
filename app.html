@@ -19,21 +19,62 @@
     <div id="Text" class="tabcontent">
         <h2>Text</h2>
         <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
+        <p>This is going to be too much text to show...</p>
     </div>
 
     <div id="Choices" class="tabcontent">
-        <h2>Choices</h2>
-        Hat color to place on Player One's head: <br>
-        <input type="radio" class="radio-choice" value="Red" checked>Red<br>
-        <input type="radio" class="radio-choice" value="Blue">Blue<br>
-        <br>
-        Hat color to place on Player Two's head: <br>
-        <select>
-            <option value="Red">Red</option>
-            <option value="Blue">Blue</option>
-        </select><br>
-        <br>
-        <input type="submit" value="Have Computer Players Make Guesses Exactly One Will Be Correct" onclick="message()">
+        <h3>Choices</h3>
+        <form id="choicesForm">
+            <label for="playerOneRed">Hat color to place on Player One's head:</label>
+            <br>
+            <input type="radio" id="playerOneRed" name="playerOneColor" value="Red"> Red
+            <br>
+            <input type="radio" id="playerOneBlue" name="playerOneColor" value="Blue"> Blue
+            <br>
+            <label for="playerTwoColor">Hat color to place on Player Two's head:</label>
+            <br>
+            <select id="playerTwoColor" name="playerTwoColor">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+            </select>
+            <br><br>
+            <button type="button" onclick="showChoice()">Have Computer Players Make Guesses</button>
+            <p id="choiceResult"></p>
+        </form>
+    </div>
+
+    <div id="ToDo" class="tabcontent">
+        <div id = "toDoListText">
+            <h3>To Do</h3>
+            <input type="text" id="newTodo" placeholder="New entry...">
+            <button onclick="addTodo()">Add</button>
+            <ul id="todoList">
+            </ul>
+        </div>
     </div>
 
     <div id="Profile" class="tabcontent">
